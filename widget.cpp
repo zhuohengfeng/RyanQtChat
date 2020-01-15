@@ -7,6 +7,8 @@ Widget::Widget(QWidget *parent) :
 {
     ui->setupUi(this);
     setFixedSize(730, 450); // 设置固定大小
+    setWindowTitle(tr("我的聊天"));
+
 }
 
 Widget::~Widget()
