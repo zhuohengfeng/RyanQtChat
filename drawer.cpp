@@ -86,4 +86,98 @@ Drawer::Drawer(QWidget *parent, Qt::WindowFlags f) : QToolBox (parent, f)
     layout->addStretch();
 
     this->addItem(groupBox, tr("联系人"));
+
+    // 添加点击头像后的处理函数
+    connect(toolBtn1, SIGNAL(clicked()), this, SLOT(showChatWidget1()));
+    connect(toolBtn2, SIGNAL(clicked()), this, SLOT(showChatWidget2()));
+    connect(toolBtn3, SIGNAL(clicked()), this, SLOT(showChatWidget3()));
+    connect(toolBtn4, SIGNAL(clicked()), this, SLOT(showChatWidget4()));
+    connect(toolBtn5, SIGNAL(clicked()), this, SLOT(showChatWidget5()));
+    connect(toolBtn6, SIGNAL(clicked()), this, SLOT(showChatWidget6()));
+    connect(toolBtn7, SIGNAL(clicked()), this, SLOT(showChatWidget7()));
+    connect(toolBtn8, SIGNAL(clicked()), this, SLOT(showChatWidget8()));
+    connect(toolBtn9, SIGNAL(clicked()), this, SLOT(showChatWidget9()));
 }
+
+void Drawer::showChatWidget1()
+{
+    chatWidget1 = new Widget(nullptr, toolBtn1->text());
+    chatWidget1->setWindowIcon(toolBtn1->icon());
+    chatWidget1->show();
+}
+
+void Drawer::showChatWidget2()
+{
+    chatWidget2 = new Widget(nullptr, toolBtn2->text());
+    chatWidget2->setWindowIcon(toolBtn2->icon());
+    chatWidget2->show();
+}
+
+void Drawer::showChatWidget3()
+{
+    chatWidget3 = new Widget(nullptr, toolBtn3->text());
+    chatWidget3->setWindowIcon(toolBtn3->icon());
+    chatWidget3->show();
+}
+
+void Drawer::showChatWidget4()
+{
+    chatWidget4 = new Widget(nullptr, toolBtn4->text());
+    chatWidget4->setWindowIcon(toolBtn4->icon());
+    chatWidget4->show();
+}
+
+void Drawer::showChatWidget5()
+{
+    chatWidget5 = new Widget(nullptr, toolBtn5->text());
+    chatWidget5->setWindowIcon(toolBtn5->icon());
+    chatWidget5->show();
+}
+
+void Drawer::showChatWidget6()
+{
+    chatWidget6 = new Widget(nullptr, toolBtn6->text());
+    chatWidget6->setWindowIcon(toolBtn6->icon());
+    chatWidget6->show();
+}
+
+void Drawer::showChatWidget7()
+{
+    chatWidget7 = new Widget(nullptr, toolBtn7->text());
+    chatWidget7->setWindowIcon(toolBtn7->icon());
+    chatWidget7->show();
+}
+
+void Drawer::showChatWidget8()
+{
+    chatWidget8 = new Widget(nullptr, toolBtn8->text());
+    chatWidget8->setWindowIcon(toolBtn8->icon());
+    chatWidget8->show();
+}
+
+void Drawer::showChatWidget9()
+{
+    chatWidget9 = new Widget(nullptr, toolBtn9->text());
+    chatWidget9->setWindowIcon(toolBtn9->icon());
+    chatWidget9->show();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
